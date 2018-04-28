@@ -6,13 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/button_new_request"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/assistantQueryButton" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/assistantRequestsLayout"
+        android:layout_below="@id/assistantQueryButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/assistantRequestsListView"
+            android:transcriptMode="normal" />
+
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
