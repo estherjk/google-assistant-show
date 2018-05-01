@@ -1,10 +1,10 @@
 # google-assistant-show
 
-Using the Android Things Kit to create "Google Assistant Show," a touch screen interface for Google Assistant. Inspired by Amazon Echo Show.
+Using the Android Things Kit to create "Google Assistant Show," a touch screen interface for Google Assistant.
 
 ## Hardware setup
 
-The setup I used for this project uses the following components:
+This project uses the following components:
 
 * [NXP i.MX7D Starter Kit](https://androidthings.withgoogle.com/#!/kits/pico-pro-maker-kit)
 * [Mini USB Microphone](https://www.adafruit.com/product/3367)
@@ -17,7 +17,7 @@ See this [section](https://github.com/androidthings/sample-googleassistant#run-t
 
 ## Project structure
 
-This project uses several files (`.java`) and modules (`grpc`) from the [androidthings/sample-googleassistant](https://github.com/androidthings/sample-googleassistant) repository:
+This project uses several files (`.java`) and a module (`grpc`) from the [androidthings/sample-googleassistant](https://github.com/androidthings/sample-googleassistant) repository:
 
 ```
 .  
@@ -33,7 +33,7 @@ This project uses several files (`.java`) and modules (`grpc`) from the [android
 +-- ...  
 ```
 
-These files make it easier to interface with the Google Assistant API in an Android Things project.
+These files make it easier to interface with the board and the Google Assistant API.
 
 ## Running the project
 
